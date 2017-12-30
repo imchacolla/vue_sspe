@@ -1,6 +1,6 @@
-# core-ui
+# vue_sspe
 
-> Open Source Admin Template
+> Proyecto en Vue
 
 ## Build Setup
 
