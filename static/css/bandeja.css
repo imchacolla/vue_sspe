@@ -1,0 +1,399 @@
+
+/* ---------------------------------------------------------------------- */
+/*  Messages
+/* ---------------------------------------------------------------------- */
+.inbox {
+    padding: 0;
+    margin-left: 5px;
+    background-color: #ffffff !important;
+}
+
+.messages-list {
+    border-right: 1px solid white;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 100%;
+    top: 65px;
+    bottom: 0;
+}
+.messages-list .messages-item {
+    border-bottom: 1px solid #c8c7cc;
+    padding: 5px 15px 5px 25px;
+    position: relative;
+}
+.messages-list .messages-item:hover {
+
+    cursor: pointer !important;
+}
+.messages-list .messages-item:hover .messages-item-star {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+    opacity: 0.3;
+}
+.messages-list .messages-item.active {
+    background-color: white;
+}
+.messages-list .messages-item.starred .messages-item-star {
+    display: block;
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+}
+.messages-list .messages-item span {
+    color: #007AFF;
+    display: block;
+}
+.messages-list .messages-item span .spam {
+    font-style: normal;
+}
+.messages-list .messages-item .messages-item-star, .messages-list .messages-item .messages-item-attachment, .messages-list .messages-item .messages-item-time, .messages-list .messages-item .messages-item-actions {
+    position: absolute;
+}
+.messages-list .messages-item .messages-item-star {
+    color: #007AFF;
+    left: 7px;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    -moz-transition: opacity, 0.3s, ease-in-out 0s;
+    -o-transition: opacity, 0.3s, ease-in-out 0s;
+    -webkit-transition: opacity, 0.3s, ease-in-out 0s;
+    transition: opacity, 0.3s, ease-in-out 0s;
+}
+.messages-list .messages-item .messages-item-star:hover, .messages-list .messages-item .messages-item-star:active, .messages-list .messages-item .messages-item-star:focus {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+}
+.messages-list .messages-item .messages-item-attachment {
+    left: 7px;
+    top: 25px;
+    color: #5F8295;
+}
+.messages-list .messages-item .messages-item-avatar {
+    border-radius: 4px;
+    float: left;
+    height: 40px;
+    width: 40px;
+}
+.messages-list .messages-item .messages-item-from, .messages-list .messages-item .messages-item-subject, .messages-list .messages-item .messages-item-content {
+    margin-left: 45px;
+}
+.messages-list .messages-item .messages-item-from {
+    font-weight: bold;
+    margin-top: 2px;
+    color: #aeacb4;
+}
+.messages-list .messages-item .messages-item-time {
+    right: 15px;
+    top: 8px;
+}
+.messages-list .messages-item .messages-item-time .text {
+    color: #8e8e93;
+    font-size: 11px;
+}
+.messages-list .messages-item .messages-item-time .messages-item-actions {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    right: 0;
+    top: 0;
+    -moz-transition: opacity, 0.3s, ease-in-out 0s;
+    -o-transition: opacity, 0.3s, ease-in-out 0s;
+    -webkit-transition: opacity, 0.3s, ease-in-out 0s;
+    transition: opacity, 0.3s, ease-in-out 0s;
+    width: 65px;
+}
+.messages-list .messages-item .messages-item-time .messages-item-actions > a, .messages-list .messages-item .messages-item-time .messages-item-actions .dropdown > a {
+    margin-left: 5px;
+}
+.messages-list .messages-item .messages-item-time .messages-item-actions > div {
+    display: inline-block;
+}
+.messages-list .messages-item .messages-item-time .messages-item-actions .dropdown-menu {
+    margin-top: 0;
+}
+.messages-list .messages-item .messages-item-time .messages-item-actions .tag-icon {
+    border-radius: 30px;
+    display: inline-block;
+    height: 11px;
+    margin: 0 5px 0 -13px;
+    width: 11px;
+}
+.messages-list .messages-item .messages-item-time .messages-item-actions .tag-icon.red {
+    background: #C82E29;
+}
+.messages-list .messages-item .messages-item-time .messages-item-actions .tag-icon.blue {
+    background: #5F8295;
+}
+.messages-list .messages-item .messages-item-time .messages-item-actions .tag-icon.green {
+    background: #1FBBA6;
+}
+.messages-list .messages-item .messages-item-subject {
+    font-size: 14px;
+    margin-bottom: 4px;
+    color: #5b5b60;
+}
+.messages-list .messages-item .messages-item-content {
+    font-size: 12px;
+    color: #c2c2c5;
+    margin-bottom: 4px;
+}
+.messages-list .messages-item .messages-item-preview {
+    color: #aeacb4;
+    font-size: 12px;
+}
+
+.wrap-options {
+    border-bottom: 1px solid #c8c7cc;
+    min-height: 65px;
+}
+
+.messages-search {
+    padding: 15px;
+    width: 100%;
+}
+@media (max-width: 1200px) {
+    .messages-search {
+        display: none;
+        position: absolute;
+        top: 0;
+    }
+}
+
+.message-actions {
+    height: 65px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: #EFEFF4;
+}
+.message-actions .actions {
+    list-style: none;
+}
+.message-actions .actions > li {
+    float: left;
+    height: 65px;
+    position: relative;
+}
+@media (max-width: 480px) {
+    .message-actions .actions > li {
+        display: none;
+    }
+}
+.message-actions .actions > li:after {
+    background: rgba(0, 0, 0, 0.07);
+    content: "";
+    height: 14px;
+    position: absolute;
+    right: -4px;
+    top: 26px;
+    width: 1px;
+}
+.message-actions .actions > li.actions-dropdown {
+    display: none;
+}
+@media (max-width: 480px) {
+    .message-actions .actions > li.actions-dropdown {
+        display: block;
+    }
+}
+.message-actions .actions > li > a, .message-actions .actions > li > span > a {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 65px;
+    padding: 0 13px;
+    white-space: nowrap;
+    color: #8e8e93;
+}
+.message-actions .actions > li.email-list-toggle {
+    display: none;
+}
+@media (max-width: 768px) {
+    .message-actions .actions > li.email-list-toggle {
+        display: block !important;
+    }
+}
+
+.message-header {
+    border-bottom: 1px solid white;
+    padding: 75px 15px 10px;
+}
+.message-header .message-item-avatar {
+    border-radius: 4px;
+    float: left;
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+}
+.message-header .message-from {
+    font-weight: bold;
+    color: #5b5b60;
+}
+.message-header .message-to {
+    color: #c2c2c5;
+}
+.message-header .message-time {
+    color: #c2c2c5;
+    font-size: 11px;
+}
+
+.message-subject {
+    padding: 20px 10px 0;
+    color: #5b5b60;
+    font-size: 16px;
+}
+
+.message-content {
+    padding: 20px 10px;
+    color: #8e8e93;
+}
+
+.inbox {
+    border-spacing: 0;
+    height: 100%;
+    margin: 0 -15px;
+}
+
+.inbox .col {
+    float: left;
+    height: 100%;
+    vertical-align: top;
+}
+
+.inbox .email-options {
+    width: 240px !important;
+    border-right: 1px solid #dee5e7;
+    overflow: hidden;
+}
+@media (max-width: 1200px) {
+    .inbox .email-options {
+        display: none;
+    }
+}
+.inbox .email-options .email-options-title {
+    color: #808285;
+    font-size: 10px;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+}
+.inbox .email-options .main-options {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+.inbox .email-options .main-options li {
+    line-height: 34px;
+}
+.inbox .email-options .main-options li .badge {
+    margin-top: 8px;
+}
+
+.no-messages {
+    bottom: 0;
+    left: 0;
+    margin-top: -34px;
+    opacity: 0.5;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 50%;
+}
+
+.inbox .email-list {
+    width: 360px !important;
+    border-right: 1px solid #dee5e7;
+    background: #ffffff;
+}
+@media (max-width: 768px) {
+    .inbox .email-list {
+        width: 100% !important;
+        border-right: none;
+        background: #ffffff;
+        position: relative;
+    }
+}
+
+.inbox .wrap-list {
+    width: 359px;
+    height: 100% !important;
+    position: relative;
+}
+.inbox .wrap-list .close-message-search {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    z-index: 100;
+    display: none;
+}
+.inbox .wrap-list .search-open .close-message-search {
+    display: block;
+}
+.inbox .wrap-list .search-open .open-message-search {
+    display: none;
+}
+.inbox .wrap-list .search-open .messages-options .btn-group {
+    display: none;
+}
+.inbox .wrap-list .search-open .messages-search {
+    display: block !important;
+    right: 50px;
+    left: 0;
+    width: auto;
+}
+@media (max-width: 768px) {
+    .inbox .wrap-list {
+        width: 100% !important;
+    }
+}
+@media (min-width: 1200px) {
+    .inbox .wrap-list .messages-options {
+        display: none;
+    }
+}
+
+.inbox .email-reader {
+    height: 100%;
+    margin-left: 10px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+    padding: 0;
+    background: #ffffff;
+}
+@media (max-width: 1200px) {
+    .inbox .email-reader {
+        margin-left: 360px;
+    }
+}
+@media (max-width: 768px) {
+    .inbox .email-reader {
+        margin-left: 0;
+    }
+}
+
+/* ie8 fixes */
+.ie8 .messages-list .messages-item .messages-item-star {
+    display: none;
+}
+
+.ie8 .messages-list .messages-item:hover .messages-item-star {
+    display: block;
+}
+
+/**/
+/* ie8 fixes */
+.ie8 .messages-list .messages-item .messages-item-time .messages-item-actions {
+    display: none;
+}
+.activo{
+    background-color:#EFEFF4;
+}
+.message-actions {
+    background-color: #efeff4;
+    height: 65px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
