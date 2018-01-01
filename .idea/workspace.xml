@@ -4,7 +4,12 @@
     <bookmark url="file://$PROJECT_DIR$/src/views/Widgets.vue" line="638" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ce34de3-29a2-4296-bd81-94f43e84894a" name="Default" comment="" />
+    <list default="true" id="2ce34de3-29a2-4296-bd81-94f43e84894a" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/views/Beneficiarios.vue" afterPath="$PROJECT_DIR$/src/views/Beneficiarios.vue" />
+      <change beforePath="$PROJECT_DIR$/src/views/components/Planillas.vue" afterPath="$PROJECT_DIR$/src/views/components/Planillas.vue" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,13 +34,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Planillas.vue" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Planillas.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/views/components/Planillas.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="234" column="13" lean-forward="false" selection-start-line="234" selection-start-column="13" selection-end-line="234" selection-end-column="21" />
+            <state relative-caret-position="618">
+              <caret line="324" column="41" lean-forward="false" selection-start-line="324" selection-start-column="41" selection-end-line="324" selection-end-column="41" />
               <folding>
-                <element signature="e#9472#9493#0" expanded="true" />
+                <element signature="e#9474#9495#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -90,19 +95,19 @@
         <entry file="file://$PROJECT_DIR$/src/_nav.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="850">
-              <caret line="50" column="10" lean-forward="true" selection-start-line="50" selection-start-column="10" selection-end-line="50" selection-end-column="10" />
+              <caret line="50" column="10" lean-forward="false" selection-start-line="50" selection-start-column="10" selection-end-line="50" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Beneficiarios.vue" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Beneficiarios.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/views/Beneficiarios.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4624">
-              <caret line="355" column="36" lean-forward="true" selection-start-line="355" selection-start-column="36" selection-end-line="355" selection-end-column="36" />
+            <state relative-caret-position="136">
+              <caret line="551" column="28" lean-forward="false" selection-start-line="551" selection-start-column="28" selection-end-line="551" selection-end-column="28" />
               <folding>
-                <element signature="e#21974#21995#0" expanded="true" />
+                <element signature="e#21956#21977#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -188,6 +193,9 @@
       <dir>$PROJECT_DIR$/scss</dir>
     </dirStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -217,8 +225,8 @@
         <option value="$PROJECT_DIR$/src/_nav.js" />
         <option value="$PROJECT_DIR$/src/router/index.js" />
         <option value="$PROJECT_DIR$/src/views/components/ReportesTabla.vue" />
-        <option value="$PROJECT_DIR$/src/views/Beneficiarios.vue" />
         <option value="$PROJECT_DIR$/src/views/components/Planillas.vue" />
+        <option value="$PROJECT_DIR$/src/views/Beneficiarios.vue" />
       </list>
     </option>
   </component>
@@ -329,55 +337,8 @@
         <subPane>
           <expand>
             <path>
-              <item name="Vue_Full_Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vue_Full_Project" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Vue_Full_Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vue_Full_Project" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="scss" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Vue_Full_Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vue_Full_Project" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Vue_Full_Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vue_Full_Project" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="containers" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Vue_Full_Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vue_Full_Project" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="router" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Vue_Full_Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vue_Full_Project" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Vue_Full_Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vue_Full_Project" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Vue_Full_Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vue_Full_Project" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Vue_Full_Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vue_Full_Project" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="static" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Vue_Project_SSPE" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Vue_Project_SSPE" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -544,11 +505,12 @@
       <workItem from="1514399401436" duration="7600000" />
       <workItem from="1514424863183" duration="36097000" />
       <workItem from="1514635724859" duration="14666000" />
+      <workItem from="1514724256512" duration="4857000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="398813000" />
+    <option name="totallyTimeSpent" value="403670000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -560,13 +522,13 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="502" width="1920" height="1037" extended-state="6" />
+    <frame x="0" y="0" width="1920" height="1037" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32922733" sideWeight="0.495842" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6695187" sideWeight="0.504158" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33264032" sideWeight="0.50584304" order="4" side_tool="true" content_ui="tabs" />
@@ -932,7 +894,7 @@
     <entry file="file://$PROJECT_DIR$/src/_nav.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="850">
-          <caret line="50" column="10" lean-forward="true" selection-start-line="50" selection-start-column="10" selection-end-line="50" selection-end-column="10" />
+          <caret line="50" column="10" lean-forward="false" selection-start-line="50" selection-start-column="10" selection-end-line="50" selection-end-column="10" />
           <folding />
         </state>
       </provider>
@@ -956,22 +918,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/Beneficiarios.vue">
+    <entry file="file://$PROJECT_DIR$/src/views/components/Planillas.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4624">
-          <caret line="355" column="36" lean-forward="true" selection-start-line="355" selection-start-column="36" selection-end-line="355" selection-end-column="36" />
+        <state relative-caret-position="618">
+          <caret line="324" column="41" lean-forward="false" selection-start-line="324" selection-start-column="41" selection-end-line="324" selection-end-column="41" />
           <folding>
-            <element signature="e#21974#21995#0" expanded="true" />
+            <element signature="e#9474#9495#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/components/Planillas.vue">
+    <entry file="file://$PROJECT_DIR$/src/views/Beneficiarios.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="234" column="13" lean-forward="false" selection-start-line="234" selection-start-column="13" selection-end-line="234" selection-end-column="21" />
+        <state relative-caret-position="136">
+          <caret line="551" column="28" lean-forward="false" selection-start-line="551" selection-start-column="28" selection-end-line="551" selection-end-column="28" />
           <folding>
-            <element signature="e#9472#9493#0" expanded="true" />
+            <element signature="e#21956#21977#0" expanded="true" />
           </folding>
         </state>
       </provider>

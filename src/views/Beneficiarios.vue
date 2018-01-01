@@ -7,8 +7,8 @@
                 <div class="card card-accent-primary card-header-inverse">
                     <div class="card-header">
                         <h5>Beneficiarios ({{total}})
-                            <b-button  class="float-right" type="submit" size="sm" @click="nuevoBeneficiario" variant="primary"><i class="fa fa-plus"></i>
-                             Nuevo
+                            <b-button  class="float-right" type="submit" size="md" @click="nuevoBeneficiario" variant="success"><i class="fa fa-plus"></i>
+                             Registrar Nuevo
                         </b-button></h5>
 
                     </div>
@@ -57,7 +57,7 @@
                             <div class="form-group col-md-3 row">
                                 <label class="col-form-label col-12 "><span>_</span></label>
                                 <div class="col-12">
-                                    <b-button type="submit" size="sm" @click="getBeneficiarios(1)" variant="success"><i class="fa fa-dot-circle-o"></i>
+                                    <b-button type="submit" size="sm" @click="getBeneficiarios(1)" variant="primary"><i class="fa fa-dot-circle-o"></i>
                                         Buscar
                                     </b-button>
                                     <b-button type="button" size="sm" @click="resetForm" variant="default"><i class="fa fa-ban"></i> Reset
@@ -156,7 +156,7 @@
                         </div>
                     </div>
                     <div class="card-footer">
-                    {{item}}
+
                     </div>
                 </div>
             </div>
@@ -484,7 +484,7 @@
         page_count: 1,
         documentos: null,
         num: 1,
-        pagenum: 5,
+        pagenum: 10,
         total: 1,
         resumen: [],
         hijos: [],
@@ -549,6 +549,7 @@
       },
       editarBeneficiario (id) {
         var vm = this
+        this.$Progress.start()
         this.edicion = true
         this.listado = false
         this.id = id
@@ -587,6 +588,7 @@
                 this.e_fecha_fin = new Date(response.data.data.fecha_conclusion + ' 04:00:00')
                 this.e_nro_contrato = response.data.data.contrato
                 this.e_salario = response.data.data.sueldo
+                this.$Progress.finish()
               } else {
                 vm.$router.push('/pages/login')
               }

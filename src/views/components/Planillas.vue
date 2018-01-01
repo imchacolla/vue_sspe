@@ -74,7 +74,7 @@
                         label="Rango de fecha para el calculo"
                         :horizontal="true"
                         :label-cols="3">
-                    <date-picker v-model="fechas" :first-day-of-week="1" lang="en" format="dd-MM-yyyy" v-on:blur="calcular" range :shortcuts="shortcuts" confirm></date-picker>
+                    <date-picker v-model="fechas" @change="calculoDias" :first-day-of-week="1" lang="en" format="dd-MM-yyyy"  range :shortcuts="shortcuts" confirm></date-picker>
                 </b-form-fieldset>
                     <b-form-fieldset
                             label="Pago mes"
@@ -290,11 +290,42 @@
       diasHabiles: function (value) {
         var vm = this
         vm.montoTransferencia = (vm.sueldo / 30) * value
+      },
+      fechas: function (value) {
+        this.calculoDias()
       }
     },
     methods: {
       calculoTransferencia (value) {
         this.montoTransferencia = (this.sueldo / 30) * value
+      },
+      date2String (date) {
+        var mm = date.getMonth() + 1 // getMonth() is zero-based
+        var dd = date.getDate()
+        return [date.getFullYear(),
+          (mm > 9 ? '' : '0') + mm,
+          (dd > 9 ? '' : '0') + dd
+        ].join('-')
+      },
+      calculoDias () {
+        if (this.fechas !== '') {
+          this.$Progress.start()
+          axios.get(this.url + 'planillas/diashabiles',
+            {
+              params: {
+                f1: this.date2String(this.fechas[0]),
+                f2: this.date2String(this.fechas[1])
+              }
+            })
+            .then(
+              (response) => {
+                this.res = response.data.res
+                if (this.res !== null && this.res === 'success') {
+                  this.diasHabiles = response.data.dias
+                  this.$Progress.finish()
+                }
+              })
+        }
       },
       buscarBeneficiario () {
         this.$Progress.start()
